@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova Solutions</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: #020617;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  color: #22c55e;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #22c55e;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+}
+
+.hero h1 {
+  font-size: 55px;
+}
+
+.hero p {
+  margin: 15px 0;
+}
+
+.btn {
+  background: #22c55e;
+  padding: 12px 25px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+/* SECCIONES */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1e293b;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* GALERÍA */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 250px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* FORMULARIO */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: #22c55e;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h2>TechNova</h2>
+    <div>
+      <a href="#">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Innovación Digital</h1>
+  <p>Transformamos tu negocio con tecnología moderna</p>
+  <a href="#contacto" class="btn">Contáctanos</a>
+</section>
+
+<section id="servicios" class="section">
+  <h2>Nuestros Servicios</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Diseño Web</h3>
+      <p>Creación de páginas modernas y responsivas.</p>
+    </div>
+    <div class="card">
+      <h3>Desarrollo</h3>
+      <p>Aplicaciones personalizadas para empresas.</p>
+    </div>
+    <div class="card">
+      <h3>Cloud</h3>
+      <p>Infraestructura segura en la nube.</p>
+    </div>
+    <div class="card">
+      <h3>Soporte</h3>
+      <p>Mantenimiento y asistencia técnica.</p>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" class="section">
+  <h2>Galería</h2>
+  <div class="gallery">
+    <img src="https://picsum.photos/300/200?1">
+    <img src="https://picsum.photos/300/200?2">
+    <img src="https://picsum.photos/300/200?3">
+    <img src="https://picsum.photos/300/200?4">
+  </div>
+</section>
+
+<section id="contacto" class="section">
+  <h2>Contacto</h2>
+  <form>
+    <input type="text" placeholder="Nombre">
+    <input type="email" placeholder="Correo">
+    <textarea placeholder="Mensaje"></textarea>
+    <button>Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 TechNova Solutions | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
